@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="checkbox"] {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(255, 0, 0, 0.2);
+  transition: 0.7s;
+}
+
+input:checked[type="checkbox"] {
+background: #03f43f;
+}
+
+input[type="checkbox"]:before {
+content: '';
+position: absolute;
+width: 20px;
+height: 20px;
+border-radius: 20px;
+top: 0;
+left: 0;
+background: #ffffff;
+transform: scale(1.1);
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+left: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="active_center">
+        <input type="checkbox"   />
+    </div>
+    
+</body>
+</html>
